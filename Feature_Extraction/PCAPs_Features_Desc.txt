@@ -1,0 +1,103 @@
+# Descriptive explanations for each feature
+
+1.num_packets:
+
+Benign: A normal number of packets corresponding to regular network communication.
+Ransomware: An unusually high number of packets, possibly indicating a rapid and aggressive attempt to communicate or propagate.
+
+2.avg_packet_len:
+
+Benign: Packets of varying lengths, typical of regular network traffic.
+Ransomware: Packets with consistent, potentially larger lengths, suggesting the transfer of encoded or encrypted payloads.
+
+3.num_tcp_packets:
+
+Benign: A balanced mix of TCP and other protocol packets.
+Ransomware: A high number of TCP packets, especially if it dominates other protocols, indicating potential malicious communication.
+
+4.num_udp_packets:
+
+Benign: Occasional UDP packets for common applications.
+Ransomware: A surge in UDP packets, signaling potential use for fast, lightweight communication, a characteristic of ransomware.
+
+5.num_ipv4_packets:
+
+Benign: Expected IPv4 traffic consistent with standard network operations.
+Ransomware: A dominance of IPv4 packets, especially if combined with other suspicious patterns.
+
+6.num_ipv6_packets:
+
+Benign: Minimal IPv6 packets in a typical network.
+Ransomware: An unusual presence of IPv6 packets, potentially indicating advanced or targeted behavior.
+
+7.num_unique_src_ports:
+
+Benign: A varied mix of source ports reflecting diverse communication sources.
+Ransomware: A concentration on specific source ports, suggesting focused or malicious communication.
+
+8.num_unique_dst_ports:
+
+Benign: A diverse set of destination ports reflecting normal network services.
+Ransomware: A focus on specific destination ports, indicative of potential ransomware-related activities.
+
+9.num_flows:
+
+Benign: A reasonable number of flows representing regular communication patterns.
+Ransomware: A high number of flows with distinct patterns, signaling potential malicious activity.
+
+10.avg_flow_size:
+
+Benign: Moderate flow sizes indicating regular data exchanges.
+Ransomware: Larger flow sizes, especially irregular patterns, suggesting potential data exfiltration or ransomware-related activities.
+
+11.num_http_packets:
+
+Benign: Occasional HTTP packets for web-based communication.
+Ransomware: An elevated count of HTTP packets, indicating potential ransomware communication with command and control servers.
+
+12.num_https_packets:
+
+Benign: Regular HTTPS packets for secure web communication.
+Ransomware: An increased count of HTTPS packets, potentially encrypted ransomware traffic.
+
+13.num_dns_packets:
+
+Benign: Expected DNS packets for domain resolution.
+Ransomware: An increased count of DNS packets, potentially indicating attempts to resolve malicious domains.
+
+14.min_interarrival_time:
+
+Benign: Consistent interarrival times between packets.
+Ransomware: Rapid, closely spaced packets with minimal interarrival times, suggesting automated or malicious behavior.
+
+15.max_interarrival_time:
+
+Benign: Occasional longer gaps between packets.
+Ransomware: Unusually long interarrival times, potentially indicating slow communication to evade detection.
+
+16.avg_interarrival_time:
+
+Benign: A moderate average interarrival time between packets.
+Ransomware: Significant variations in interarrival times, indicative of irregular communication patterns.
+
+17.source_ip:
+
+Benign: The source IP address of a regular network device.
+Ransomware: An unfamiliar or suspicious source IP address, potentially indicating a threat.
+
+18.destination_ip:
+
+Benign: The destination IP address of a known and trusted network entity.
+Ransomware: An unknown or potentially malicious destination IP address.
+
+19.file_types:
+
+Benign: Common file types associated with regular web traffic.
+Ransomware: Unusual or suspicious file types transferred over HTTP, potentially indicating malicious payloads.
+
+
+20.Payload Entropy: Measure the entropy of the payload data in each packet.
+
+High Entropy (Random-Looking): Ransomware often encrypts files, resulting in encrypted payloads with high entropy.
+
+Low Entropy (Structured): Benign traffic may have more structured and predictable payload patterns.
