@@ -7,3 +7,11 @@ Additionally, the script calculates entropy for payload data, providing a measur
 The extracted features are saved in CSV format, making it easy to analyze the data using tools like spreadsheets or machine learning algorithms. The script is designed to be applied across multiple PCAP files, making it scalable for analyzing network traffic from various samples and potentially aiding in the identification of different ransomware families or threat actors.
 
 This feature extraction tool aims to provide a starting point for cybersecurity analysts and researchers to gain insights into network traffic patterns, ultimately assisting in the detection and understanding of ransomware attacks.
+
+Files_Extractor: 
+* The "path" provides information about the location or name of the file, 
+* "pids" provides information about process IDs associated with the file, 
+* "filepath" gives the actual file path on the system.
+
+
+
