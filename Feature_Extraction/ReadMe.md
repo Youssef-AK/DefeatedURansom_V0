@@ -9,7 +9,7 @@ The extracted features are saved in CSV format, making it easy to analyze the da
 This feature extraction tool aims to provide a starting point for cybersecurity analysts and researchers to gain insights into network traffic patterns, ultimately assisting in the detection and understanding of ransomware attacks.
 
 Files_Extractor: 
-* The "path" provides information about the location or name of the file, 
+* "path" provides information about the location or name of the file, 
 * "pids" provides information about process IDs associated with the file, 
 * "filepath" gives the actual file path on the system.
 
