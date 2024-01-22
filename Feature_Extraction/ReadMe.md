@@ -15,3 +15,12 @@ Files_Extractor:
 
 
 
+BSON Feature Extractor:
+
+Python script is designed to extract features from BSON (Binary JSON) files generated during the execution of ransomware/benign samples. It recursively traverses a specified main directory containing various ransomware family samples, reads BSON files located within their "logs" directories, and extracts relevant features. The script then creates unique CSV files for each ransomware sample, storing the extracted features. The CSV files are named based on the family name and sample ID, providing an organized structure for further analysis.
+
+Features:
+
+Extracts BSON features including 'I', 'T', 't', 'h', 'entry_name', and 'num_args'.
+Handles binary data in arguments, displaying either decoded UTF-8 or hexadecimal representation.
+Creates separate CSV files for each ransomware sample for organized analysis.
